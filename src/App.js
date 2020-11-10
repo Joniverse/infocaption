@@ -7,21 +7,24 @@ import GuideList from './components/GuideList';
 
 import './App.css';
 
+let APIStartTime;
+let APIStopTime;
+
 function App() {
   const [result, setResult] = useState();
   const [page, setPage] = useState(1);
   const [searchString, setSearchString] = useState('');
 
-  // https://cors-anywhere.herokuapp.com/
-
   useEffect(() => {
-    console.log('Started fetching');
+    console.log('Called API');
+    APIStartTime = Date.now();
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
       )
       .then(function (response) {
-        console.log('Finished fetching');
+        APIStopTime = Date.now();
+        console.log('API Responded in ' + (APIStopTime - APIStartTime) + 'ms');
         setResult(response.data);
       })
       .catch(function (error) {

@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/infocaption/static/css/main.fe62f861.chunk.css",
-    "main.js": "/infocaption/static/js/main.12d11f7a.chunk.js",
-    "main.js.map": "/infocaption/static/js/main.12d11f7a.chunk.js.map",
-    "runtime-main.js": "/infocaption/static/js/runtime-main.3624d506.js",
-    "runtime-main.js.map": "/infocaption/static/js/runtime-main.3624d506.js.map",
-    "static/js/2.62b0493e.chunk.js": "/infocaption/static/js/2.62b0493e.chunk.js",
-    "static/js/2.62b0493e.chunk.js.map": "/infocaption/static/js/2.62b0493e.chunk.js.map",
-    "static/js/3.2e0655ee.chunk.js": "/infocaption/static/js/3.2e0655ee.chunk.js",
-    "static/js/3.2e0655ee.chunk.js.map": "/infocaption/static/js/3.2e0655ee.chunk.js.map",
+    "main.css": "/infocaption/static/css/main.5fbb5a2e.chunk.css",
+    "main.js": "/infocaption/static/js/main.4a9dc667.chunk.js",
+    "main.js.map": "/infocaption/static/js/main.4a9dc667.chunk.js.map",
+    "runtime-main.js": "/infocaption/static/js/runtime-main.1f9fe16d.js",
+    "runtime-main.js.map": "/infocaption/static/js/runtime-main.1f9fe16d.js.map",
+    "static/js/2.a956dfa1.chunk.js": "/infocaption/static/js/2.a956dfa1.chunk.js",
+    "static/js/2.a956dfa1.chunk.js.map": "/infocaption/static/js/2.a956dfa1.chunk.js.map",
+    "static/js/3.435cdb5f.chunk.js": "/infocaption/static/js/3.435cdb5f.chunk.js",
+    "static/js/3.435cdb5f.chunk.js.map": "/infocaption/static/js/3.435cdb5f.chunk.js.map",
     "index.html": "/infocaption/index.html",
-    "static/css/main.fe62f861.chunk.css.map": "/infocaption/static/css/main.fe62f861.chunk.css.map",
-    "static/js/2.62b0493e.chunk.js.LICENSE.txt": "/infocaption/static/js/2.62b0493e.chunk.js.LICENSE.txt",
+    "static/css/main.5fbb5a2e.chunk.css.map": "/infocaption/static/css/main.5fbb5a2e.chunk.css.map",
+    "static/js/2.a956dfa1.chunk.js.LICENSE.txt": "/infocaption/static/js/2.a956dfa1.chunk.js.LICENSE.txt",
     "static/media/App.css": "/infocaption/static/media/background2.88df0876.jpg",
     "static/media/thumbnail-alt.5f539519.png": "/infocaption/static/media/thumbnail-alt.5f539519.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3624d506.js",
-    "static/js/2.62b0493e.chunk.js",
-    "static/css/main.fe62f861.chunk.css",
-    "static/js/main.12d11f7a.chunk.js"
+    "static/js/runtime-main.1f9fe16d.js",
+    "static/js/2.a956dfa1.chunk.js",
+    "static/css/main.5fbb5a2e.chunk.css",
+    "static/js/main.4a9dc667.chunk.js"
   ]
 }

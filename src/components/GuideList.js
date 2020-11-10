@@ -5,7 +5,6 @@ import ArrowRight from '@material-ui/icons/ArrowRight';
 import IconButton from '@material-ui/core/IconButton';
 
 export default function GuideList(props) {
-  console.log(props.result);
   return (
     <div>
       {props.result ? (

@@ -12,10 +12,12 @@ function App() {
   const [page, setPage] = useState(1);
   const [searchString, setSearchString] = useState('');
 
+  // https://cors-anywhere.herokuapp.com/
+
   useEffect(() => {
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
+        `https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
       )
       .then(function (response) {
         setResult(response.data);

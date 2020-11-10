@@ -64,13 +64,14 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-top: 20px;
-  padding: 10px;
+  padding: 16px;
   width: 80%;
   background: #ffffffdd;
   min-height: 80px;
 }
 
 .guide-section-left {
+  display: flex;
   border-right: 1px solid #ccc;
 }
 
@@ -84,6 +85,10 @@ body {
   margin-right: 10px;
 }
 
+.guide-headline-icon {
+  margin-right: 5px;
+}
+
 .guide-headline {
   display: flex;
   align-items: center;
@@ -94,4 +99,9 @@ body {
 
 .guide-summary {
   font-weight: 200;
+}
+
+.guide-author {
+  font-size: 0.8rem;
+  color: #888;
 }

@@ -12,7 +12,8 @@ export default function GuideList(props) {
           <div className="guide-list-paginate">
             <IconButton
               disabled={props.result.currentPage < 2 ? true : false}
-              onClick={props.handlePrevPage}
+              direction="prev"
+              onClick={props.handlePageChange}
             >
               <ArrowLeft fontSize="large" />
             </IconButton>
@@ -26,7 +27,8 @@ export default function GuideList(props) {
                   ? false
                   : true
               }
-              onClick={props.handleNextPage}
+              direction="next"
+              onClick={props.handlePageChange}
             >
               <ArrowRight fontSize="large" />
             </IconButton>

@@ -16,11 +16,9 @@ function App() {
   const [searchString, setSearchString] = useState('');
 
   useEffect(() => {
-    console.log('Called API');
     APIStartTime = Date.now();
-
-    //https://cors-anywhere.herokuapp.com/
-
+    // - - - USE THIS PROXY IF CORS IS ENABLED ON THE SERVER - - -
+    // - - - https://cors-anywhere.herokuapp.com/ - - -
     axios
       .get(
         `https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
@@ -40,23 +38,17 @@ function App() {
     setPage(1);
   };
 
-  const handleNextPage = () => {
-    setPage((prev) => prev + 1);
-  };
-
-  const handlePrevPage = () => {
-    setPage((prev) => prev - 1);
+  const handlePageChange = (event) => {
+    event.currentTarget.getAttribute('direction') === 'next'
+      ? setPage((prev) => prev + 1)
+      : setPage((prev) => prev - 1);
   };
 
   return (
     <div className="background">
       <Header />
       <Search handleSetSearch={handleSetSearch} />
-      <GuideList
-        result={result}
-        handleNextPage={handleNextPage}
-        handlePrevPage={handlePrevPage}
-      />
+      <GuideList result={result} handlePageChange={handlePageChange} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import thumbnail from '../images/thumbnail-alt.png';
 import Link from '@material-ui/core/Link';
 import Description from '@material-ui/icons/Description';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
 export default function Guide(props) {
   return (
@@ -23,7 +24,10 @@ export default function Guide(props) {
           href={props.res.fullURL}
           target="_blank"
         >
-          <Description />
+          <RadioButtonCheckedIcon
+            fontSize="small"
+            className="guide-headline-icon"
+          />
           {props.res.name}
         </Link>
 
@@ -32,6 +36,10 @@ export default function Guide(props) {
             ? props.res.summary
             : 'Klicka på rubriken för att läsa mer'}
         </p>
+
+        {props.res.FirstLastName !== ' ' ? (
+          <p className="guide-author">Skapad av {props.res.FirstLastName}</p>
+        ) : null}
       </div>
     </div>
   );

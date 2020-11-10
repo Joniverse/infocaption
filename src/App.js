@@ -18,9 +18,12 @@ function App() {
   useEffect(() => {
     console.log('Called API');
     APIStartTime = Date.now();
+
+    //https://cors-anywhere.herokuapp.com/
+
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
+        `https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
       )
       .then(function (response) {
         APIStopTime = Date.now();

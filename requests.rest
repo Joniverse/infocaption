@@ -1,5 +1,2 @@
-GET https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=färg&page=$1
+GET https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=info&page=$1
 
-###
-
-GET https://support.infocaption.com/API/lucene/guidesearch?searchQuery=färg&page=$1

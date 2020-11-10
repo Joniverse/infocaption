@@ -15,11 +15,13 @@ function App() {
   // https://cors-anywhere.herokuapp.com/
 
   useEffect(() => {
+    console.log('Started fetching');
     axios
       .get(
-        `https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
+        `https://cors-anywhere.herokuapp.com/https://support.infocaption.com/API/lucene/guidesearch?searchQuery=${searchString}&page=${page}`
       )
       .then(function (response) {
+        console.log('Finished fetching');
         setResult(response.data);
       })
       .catch(function (error) {
